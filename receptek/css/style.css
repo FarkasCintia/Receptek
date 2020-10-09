@@ -10,9 +10,13 @@ body {
     background: url('../pics/bg-body.png') #fff;
 }
 
+
+
 h1 {
-    font-family: 'Times New Roman', Times, serif;
-    border: 1px dashed black;
+    font-family:'Lobster';
+    color: chartreuse;
+    border-top: 1px dashed black;
+    border-bottom: 1px dashed black;
     background-color: white;
     text-align: center;
     padding: 30px;
@@ -42,10 +46,74 @@ nav a {
     padding: 20px;
     color: white;
     display: block;
+    border-right: 1px dashed black;
+    border-color: white;
 }
 
 nav a:hover {
     background: red;
 }
 
+.wapper {
+    margin: 40px;
+    max-width: 1200px;
+}
 
+.content{
+    display: flex;
+    margin: 40px auto;
+    /* flex-flow: row-reverse; */
+}
+
+main {
+    order: 2;
+    flex: 70%;
+    flex-flow: column nowrap;
+}
+
+aside{
+ order: 1;
+ padding: 0 20px;
+ flex: 30%;
+ 
+}
+
+.recipe {
+    flex-wrap: row wrap;
+    padding: 10px;
+}
+.recipe-box{
+    flex-grow: 1;   
+    width: 300px; 
+    margin: 10px;
+    background: white;
+}
+
+.recipe-box img {
+    width: 100%;
+}
+
+.recipe-box h2, .recipe-box p {
+    padding: 0 10px;
+}
+
+aside ul{
+   list-style: none;
+   margin: 0;
+   padding: 0; 
+}
+
+aside li{
+    padding: 20px 0;
+    border-bottom: 1px dashed black;
+}
+
+aside li:hover {
+    padding: 20px;
+    background-color: gray;
+}
+
+aside a {
+    text-decoration: none;
+    color: black;
+}
